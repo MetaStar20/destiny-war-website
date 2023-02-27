@@ -1,0 +1,59 @@
+@font-face {
+	font-family: 'BRLNSR';
+	src: local('BRLNSR'),
+		 url('./assets/font/BRLNSR.TTF') format('truetype'), /* Super Modern Browsers */
+}
+
+@font-face {
+	font-family: 'AgencyFB';
+	src: local('AgencyFB'),
+		 url('./assets/font/agency-fb_[allfont.net].ttf') format('truetype'), /* Super Modern Browsers */
+}
+
+a {
+    text-decoration: unset;
+    color: white;
+    cursor: pointer;
+}
+
+button {
+    position: relative;
+	outline: unset;
+	border: unset;
+	cursor: pointer;
+    background: transparent;
+    padding: 0;
+
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    &:hover {
+        top: -3px;
+        // box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.493);
+        
+    }
+}
+
+.App {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative;
+}
+
+.notification-container {
+	width: 600px;
+}
+  
+@media (min-width: 0px) and (max-width: 768px) {  
+	.notification-container {
+	  	width: 80%;
+	}
+}

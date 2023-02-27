@@ -1,0 +1,16 @@
+.wikipedia {
+    min-height: calc(100vh - 182px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.5rem;
+    color: rgb(48, 57, 66);
+}
+
+@media (max-width: 768px) {
+    .wikipedia {
+        font-size: 5vw;
+    }
+}

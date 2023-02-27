@@ -1,0 +1,159 @@
+.inventory {
+    @keyframes inventoryAnimate {
+        0% {
+            transform: scale(1.0);
+        }
+        25% {
+            transform: scale(1.1);
+        }
+        75% {
+            transform: scale(0.9);
+        }
+        100% {
+            transform: scale(1.0);
+        }
+    }
+
+    padding: 0 100px;
+    color: #002f47;
+    min-height: calc(100vh - 182px);
+
+    &__title {
+        text-align: center;
+        font-size: 40px;
+        
+        padding-top: 50px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin: 100px 0;
+        flex-wrap: wrap;
+
+        &__dwar, &__mount, &__pet {
+            &:hover {
+                animation: inventoryAnimate 1s infinite linear;
+            }
+
+            span {
+                font-family: AgencyFB;
+            }
+        }
+
+        &__dwar {
+            width: 420px;
+
+            span {
+                font-size: 25px;
+                top: 25%;
+            }
+
+        }
+
+        &__mount {
+            width: 300px;
+
+            span {
+                font-size: 20px;
+                top: 21%;
+            }
+        }
+
+        &__pet {
+            width: 300px;
+
+            span {
+                font-size: 20px;
+                top: 24%;
+            }
+        }
+
+        &__title {
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        &__pic {
+            position: relative;
+            
+            span {
+                position: absolute;
+                transform: translate3d(-50%, 0, 0);
+                left: 50%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .inventory {
+        padding: 0 5%;
+
+        &__items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            margin: 50px 0;
+
+            &__dwar, &__mount, &__pet {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .inventory {    
+        &__title {
+            font-size: 8vw;
+            
+            padding-top: 10vw;
+        }
+    
+        &__items {
+            margin: 10vw 0;
+    
+            &__dwar, &__mount, &__pet {
+                margin-bottom: 6vw;
+            }
+
+            &__dwar {
+                width: 84vw;
+    
+                span {
+                    font-size: 5vw;
+                }
+    
+            }
+    
+            &__mount {
+                width: 60vw;
+    
+                span {
+                    font-size: 4vw;
+                }
+            }
+    
+            &__pet {
+                width: 60vw;
+    
+                span {
+                    font-size: 4vw;
+                }
+            }
+    
+            &__title {
+                font-size: 5vw;
+                margin-bottom: 3vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,153 @@
+.fighter {
+    @keyframes teamAnimate {
+        0% {
+            width: 100%;
+        }
+        25% {
+            width: 110%;
+        }
+        75% {
+            width: 90%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+
+    @keyframes hvr-buzz {
+        50% {
+            -webkit-transform: translateX(3px) rotate(2deg);
+            transform: translateX(3px) rotate(2deg);
+        }
+        100% {
+            -webkit-transform: translateX(-3px) rotate(-2deg);
+            transform: translateX(-3px) rotate(-2deg);
+        }
+    }
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+
+    &__desc {
+        width: 600px;
+
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 150px;
+
+                &:hover {
+                    animation: hvr-buzz 0.15s infinite linear;
+                }
+            }
+
+            span {
+                text-transform: uppercase;
+                font-size: 50pt;
+                color:#28f0a5;
+            }
+        }
+
+        &__content {
+            font-size: 15pt;
+            margin-bottom: -50px;
+            line-height: 2rem;
+
+            padding: 0 25px;
+        }
+
+        &__youtube {
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-left:75px; 
+            padding-top:170px; 
+            padding-bottom:50px;
+            padding-right:75px;
+
+            iframe {
+                width: 440px;
+                height: 220px;
+            }
+        }
+    }
+
+    &__pic {
+        width: 600px;
+        height: 600px;
+
+        img {
+            position: relative;
+            transform: translate3d(-50%, -50%, 0);
+            left: 50%;
+            top: 50%;
+
+            width: 100%;
+
+            transition: all 0.1s linear;
+
+            &:hover {
+                animation: teamAnimate 1s infinite linear;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .fighter {    
+        @keyframes hvr-buzz {
+            50% {
+                -webkit-transform: translateX(0.5vw) rotate(2deg);
+                transform: translateX(0.5vw) rotate(2deg);
+            }
+            100% {
+                -webkit-transform: translateX(-0.5vw) rotate(-2deg);
+                transform: translateX(-0.5vw) rotate(-2deg);
+            }
+        }
+    
+        margin-top: 8.3vw;
+
+        &__desc {
+            width: 100vw;
+    
+            &__title {
+                img {
+                    width: 25vw;
+                }
+                span {
+                    font-size: 10vw;
+                }
+            }
+    
+            &__content {
+                font-size: 4vw;
+                margin-bottom: -8.3vw;
+                line-height: 6vw;
+                padding: 0 4vw;
+            }
+    
+            &__youtube {
+                padding-left: 12.5vw; 
+                padding-top: 28.3vw; 
+                padding-bottom: 8.3vw;
+                padding-right: 12.6vw;
+    
+                iframe {
+                    width: 73.3vw;
+                    height: 36.6vw;
+                }
+            }
+        }
+    
+        &__pic {
+            width: 100vw;
+            height: 100vw;
+        }
+    }   
+}

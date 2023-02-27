@@ -1,0 +1,3 @@
+https://gateway.pinata.cloud/ipfs/Qma7eTAEDf1SPTqU5rxK7rvHdpKR5WcPKLm5jNuSdohAid/DestinyWarCharacter.json
+https://gateway.pinata.cloud/ipfs/Qma7eTAEDf1SPTqU5rxK7rvHdpKR5WcPKLm5jNuSdohAid/DestinyWarMount.json
+https://gateway.pinata.cloud/ipfs/Qma7eTAEDf1SPTqU5rxK7rvHdpKR5WcPKLm5jNuSdohAid/DestinyWarPet.json

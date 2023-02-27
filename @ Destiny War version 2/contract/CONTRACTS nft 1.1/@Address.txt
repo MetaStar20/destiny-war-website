@@ -1,0 +1,46 @@
+kovan
+
+usdt : 0x07de306ff27a2b630b1141956844eb1552b956b5
+routerv2 : 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
+Address : 0x2Cd5A43f79DA54936827B4bD5A8BD2FC45cAee42
+
+1000000000000000000000
+
+
+
+Busd 0xe9e7cea3dedca5984780bafc599bd69add087d56
+router 0x10ED43C718714eb63d5aA57B78B54704E256024E
+
+gateway.pinata.cloud
+destinywar.mypinata.cloud
+
+
+export const normalImageURI =
+  "https://destinywar.mypinata.cloud/ipfs/QmVEFivQ2NDdm4FA2FTYWFi2nJRjPbc43XE8UMzdC5ZaPH/character_normal/";
+export const rareImageURI =
+  "https://destinywar.mypinata.cloud/ipfs/QmVEFivQ2NDdm4FA2FTYWFi2nJRjPbc43XE8UMzdC5ZaPH/character_rare/";
+export const notRevealedURI =
+  "https://destinywar.mypinata.cloud/ipfs/Qma5e7Uv7jNq1SUL7Cyw7dx2gsYet94qgaHevYkabxFiAn/presale/chest.gif";
+
+export const mountURI =
+  "https://destinywar.mypinata.cloud/ipfs/QmRZecSbjXLRHHeMy7qyj5MZUSMEX5eo6J1wchMmkKfgS9/";
+
+export const petURI =
+  "https://destinywar.mypinata.cloud/ipfs/QmQ7uCosTus8UTpSwpzyJpxY1HHktUALNW6GBF99UaXDEY/";
+
+----------------
+Token : 0xeaAbc74a2Dfc2CC24Fd8b52273865eCea0CCfe47
+Character : 0x80E2E8088134CD08eE3B59e26CC00040def1929b
+Mount : 0x937Af61e450fF92349C7D7f0EB8aae999d5b5817
+Pet: 0x1d2EDfc4fF9f0841817C0B9a9B70bBc8757D023d
+Claim : 0x584F8cC4CBF3e80D9F57a7495F348a403a16c231
+
+------------------KOVAN------------------
+
+TOken : 0x4E971a1db8307F3A686257895bc6A903179Ee9a4
+Reward: 0x57F05A3324f0abDF7795f82bbAe076B1f1cA363e
+
+
+
+
+

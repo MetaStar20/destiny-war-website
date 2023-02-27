@@ -1,0 +1,69 @@
+.intro {
+    margin-top: 50px;
+
+    @keyframes logoAnimate {
+        0% {
+            width: 100%;
+        }
+        33% {
+            width: 110%;
+        }
+        66% {
+            width: 105%;
+        }
+        100% {
+            width: 110%;
+        }
+    }
+
+    &__logo {
+        height: 550px;
+
+        img {
+            position: relative;
+            transform: translate3d(-50%, -50%, 0);
+            left: 50%;
+            top: 50%;
+
+            width: 100%;
+
+            transition: all 0.5s;
+            
+            &:hover {
+                animation: logoAnimate 0.5s linear;
+                width: 110%;
+            }
+        }
+    }
+
+    &__desc {
+        text-align: center;
+        p {
+            font-size: 18pt;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .intro {
+        margin-top: 4.17vw;
+
+        &__logo {
+            height: 45.8vw;
+        }
+
+        &__desc {
+            padding: 0 3%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        &__desc {
+            p {
+                font-size: 4vw;
+            }
+        }
+    }
+}

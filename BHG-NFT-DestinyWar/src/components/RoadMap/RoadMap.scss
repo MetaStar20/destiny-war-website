@@ -1,0 +1,111 @@
+.roadMap {
+    @keyframes roadMapAnimate {
+        0% {
+            transform: scale(1.0);
+        }
+        25% {
+            transform: scale(1.1);
+        }
+        75% {
+            transform: scale(0.9);
+        }
+        100% {
+            transform: scale(1.0);
+        }
+    }
+
+    &__title {
+        text-align: center;
+        color:cyan;
+        font-size:64px;
+        font-weight:bold;
+
+        margin: 50px 0;
+        margin-top: 100px;
+    }
+
+    &__content {
+        padding: 0 250px;
+
+        &__item {
+            margin-bottom: 10px;
+
+            div {
+                width: 100%;
+
+                img {
+                    width: 600px;
+    
+                    &:hover {
+                        animation: roadMapAnimate 1s infinite linear;
+                    }
+                }
+            }
+        }
+
+        .toLeft {
+            text-align: left;
+        }
+
+        .toRight {
+            text-align: right;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .roadMap {
+        &__content {
+            &__item {
+                div {
+                    img {
+                        width: 370px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .roadMap {
+        &__content {
+            padding: 0 10%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .roadMap {
+        &__content {
+            padding: 0 5%;
+            &__item {
+                width: 100%;
+                margin-bottom: 5vw;
+
+                div {
+                    width: 100%;
+
+                    img {
+                        width: 70%;
+
+                        &:hover {
+                            animation: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .roadMap {
+        &__title {
+            font-size: 10.7vw;
+    
+            margin: 8.3vw 0;
+            margin-top: 16.6vw;
+        }
+    }
+}
